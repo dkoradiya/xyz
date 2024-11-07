@@ -60,8 +60,8 @@ jobs:
       - name: Store Repository Structure in MongoDB
         if: steps.changes.outputs.changed == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          GITHUB_TOKEN: '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'
+          MONGODB_URI: 'mongodb+srv://learnlink:learnlink@cluster0.ptp95.mongodb.net/learnlink'
         run: |
           python store_repo_structure.py
         
